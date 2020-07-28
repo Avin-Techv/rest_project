@@ -1,0 +1,10 @@
+# Environments
+env/
+
+# IDE Files
+.vscode/
+.idea/
+
+# Django
+*.pyc
+__pycache__/
