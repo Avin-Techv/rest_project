@@ -64,5 +64,22 @@ which will direct you to to the terminal and then
 
 to list the databases and similar psql commands for the rest of the operations
 
+## Verifying if values from Docker are getting displayed
 
+1. go to docker terminal
 
+```bash
+docker exec -it rest_project_web_1 sh
+```
+
+2. create a superuser via the following command and give necessary details
+
+```bash
+./manage.py createsuperuser
+```
+
+3. after running the container check the following url in browser, the createuser details will be displayed in there
+
+```bash
+http://0.0.0.0:8000/users/
+```
